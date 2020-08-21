@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   res.status(200).send('Hello, world!').end();
 });
 
+app.get('/status', (req, res) => {
+  res.status(200).send('Hey, I am good and running!').end();
+});
+
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
